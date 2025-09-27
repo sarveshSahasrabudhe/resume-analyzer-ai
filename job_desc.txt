@@ -1,0 +1,24 @@
+Software Engineer Position
+
+    We are seeking a talented Software Engineer to join our development team. The ideal candidate should have:
+
+    Required Skills:
+    - Python programming expertise
+    - Experience with machine learning and AI
+    - Knowledge of SQL and database management
+    - Git version control
+    - RESTful API development
+    - JavaScript and web technologies
+    - Strong problem-solving abilities
+    - Experience with cloud platforms (AWS/Azure)
+
+    Responsibilities:
+    - Develop and maintain software applications
+    - Write clean, efficient, and maintainable code
+    - Collaborate with cross-functional teams
+    - Participate in code reviews
+    - Debug and resolve software defects
+    - Implement new features and improvements
+
+    3+ years of experience preferred
+    Bachelor's degree in Computer Science or related field
