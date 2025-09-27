@@ -1,24 +1,19 @@
-Software Engineer Position
+We are looking for a Software Developer with strong experience in Java, Spring Boot, and cloud platforms.  
+The ideal candidate should have hands-on experience in building REST APIs and microservices architecture.  
 
-    We are seeking a talented Software Engineer to join our development team. The ideal candidate should have:
+Key Responsibilities:
+- Design and develop scalable backend services using Java and Spring Boot.
+- Deploy applications on AWS Cloud (S3, EC2, Lambda, RDS).
+- Work with containerization technologies such as Docker and Kubernetes.
+- Implement CI/CD pipelines using Jenkins or GitLab.
+- Collaborate with front-end developers using React for integration.
+- Maintain and optimize PostgreSQL or MongoDB databases.
 
-    Required Skills:
-    - Python programming expertise
-    - Experience with machine learning and AI
-    - Knowledge of SQL and database management
-    - Git version control
-    - RESTful API development
-    - JavaScript and web technologies
-    - Strong problem-solving abilities
-    - Experience with cloud platforms (AWS/Azure)
-
-    Responsibilities:
-    - Develop and maintain software applications
-    - Write clean, efficient, and maintainable code
-    - Collaborate with cross-functional teams
-    - Participate in code reviews
-    - Debug and resolve software defects
-    - Implement new features and improvements
-
-    3+ years of experience preferred
-    Bachelor's degree in Computer Science or related field
+Required Skills:
+- Strong programming skills in Java and Python.
+- Experience with Spring Boot and REST API development.
+- Knowledge of AWS Cloud services.
+- Familiarity with Docker and Kubernetes.
+- Database experience with PostgreSQL or MongoDB.
+- CI/CD tools such as Jenkins.
+- Understanding of microservices architecture.
