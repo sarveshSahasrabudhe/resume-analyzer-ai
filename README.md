@@ -14,6 +14,31 @@ A FastAPI microservice for analyzing resumes and matching them with job descript
 
 ## Installation
 
+### Option 1: Docker (Recommended)
+
+1. **Clone the repository**:
+   ```bash
+   git clone <your-repo-url>
+   cd resume-analyzer-ai
+   ```
+
+2. **Build and run with Docker**:
+   ```bash
+   # Using the build script (recommended)
+   ./build.sh
+   
+   # Or manually
+   docker build -t resume-analyzer .
+   docker run -d -p 8000:8000 --name resume-analyzer-container resume-analyzer
+   ```
+
+3. **Test the API**:
+   ```bash
+   curl http://localhost:8000/health
+   ```
+
+### Option 2: Local Python Installation
+
 1. **Clone the repository**:
    ```bash
    git clone <your-repo-url>
@@ -208,6 +233,50 @@ This project is open source and available under the MIT License.
 3. Make your changes
 4. Add tests
 5. Submit a pull request
+
+## 🚀 Deployment
+
+### Quick Deploy to Cloud
+
+Use the deployment script for easy cloud deployment:
+
+```bash
+# Deploy to different platforms
+./deploy.sh local      # Local Docker deployment
+./deploy.sh aws        # Deploy to AWS
+./deploy.sh gcp        # Deploy to Google Cloud
+./deploy.sh azure      # Deploy to Azure
+./deploy.sh heroku     # Deploy to Heroku
+```
+
+### Manual Cloud Deployment
+
+#### AWS (ECS/App Runner)
+```bash
+# Build and push to ECR
+aws ecr create-repository --repository-name resume-analyzer
+aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin <account-id>.dkr.ecr.us-east-1.amazonaws.com
+docker build -t resume-analyzer .
+docker tag resume-analyzer:latest <account-id>.dkr.ecr.us-east-1.amazonaws.com/resume-analyzer:latest
+docker push <account-id>.dkr.ecr.us-east-1.amazonaws.com/resume-analyzer:latest
+```
+
+#### Google Cloud Run
+```bash
+# Build and deploy
+gcloud builds submit --tag gcr.io/PROJECT-ID/resume-analyzer
+gcloud run deploy resume-analyzer --image gcr.io/PROJECT-ID/resume-analyzer --platform managed --allow-unauthenticated
+```
+
+#### Heroku
+```bash
+# Deploy with Heroku Container Registry
+heroku container:login
+heroku container:push web
+heroku container:release web
+```
+
+For detailed deployment instructions, see [DEPLOYMENT.md](DEPLOYMENT.md).
 
 ## Support
 
