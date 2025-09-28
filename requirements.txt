@@ -1,0 +1,15 @@
+# Core dependencies
+PyPDF2==3.0.1
+spacy==3.8.7
+scikit-learn==1.7.2
+transformers==4.44.2
+numpy==2.3.3
+
+# FastAPI dependencies
+fastapi==0.117.1
+uvicorn==0.37.0
+python-multipart==0.0.20
+
+# Additional dependencies
+pydantic==2.11.9
+requests==2.32.5
