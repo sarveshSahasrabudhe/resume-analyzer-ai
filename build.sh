@@ -102,3 +102,4 @@ else
 fi
 
 echo -e "\n${GREEN}🎉 Resume Analyzer is now running in Docker!${NC}"
+
